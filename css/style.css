@@ -1,0 +1,94 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* OUTLINE */
+*:focus {
+    outline: 2px dashed var(--primary);
+    outline-offset: 2px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    font-family: "Inter", "Arial", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    font-style: normal;
+    background-color: #f1f4ff;
+    color: #fff;
+}
+
+a {
+    list-style: none;
+    text-decoration: none;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    padding-left: 24px;
+    padding-right: 24px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Left */
+.left {
+    margin-top: 80px;
+    padding-top: 55px;
+    border-radius: 20px;
+    background-image: url(../img/Rectangle.jpg);
+    background-repeat: no-repeat;
+    background-size: 540px;
+    height: 640px;
+}
+
+.button {
+    margin-top: 0;
+    margin-left: 60px;
+    margin-bottom: 60px;
+    padding: 5px 14px;
+    font-style: 14px;
+    font-weight: 400;
+    border-radius: 41px;
+    background: none;
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+.left-heading {
+    margin-top: 0;
+    margin-left: 60px;
+    margin-bottom: 25px;
+    font-style: 36px;
+    font-weight: 700;
+    line-height: 46px;
+}
+
+.left-text {
+    margin-top: 0;
+    margin-left: 60px;
+    margin-bottom: 198px;
+}
+
+.left-link {
+    padding-left: 0;
+    padding: 28px 130px 29px 129px;
+    font-size: 19px;
+    border: none;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: #4dc490;
+    color: #fff;
+}
+
+.left-link span {
+    font-weight: 700;
+}

@@ -1,3 +1,13 @@
+/* CUSTOM PROPS */
+:root {
+    --body-color: #f1f4ff;
+    --green: #4dc490;
+    --blue: #655af2;
+    --red: #f03535;
+    --text-color: #000;
+}
+
+
 *,
 *::after,
 *::before {
@@ -21,8 +31,8 @@ body {
     font-weight: 400;
     line-height: 26px;
     font-style: normal;
-    background-color: #f1f4ff;
-    color: #fff;
+    background-color: var(--body-color);
+    color: var(--text-color);
 }
 
 a {
@@ -40,55 +50,105 @@ a {
 }
 
 /* Left */
-.left {
-    margin-top: 80px;
-    padding-top: 55px;
+.main-content {
+    display: flex;
+    align-items: center;
+}
+
+.hero {
+    --text-color: #fff;
+
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 570px;
     border-radius: 20px;
+    overflow: hidden;
+    color: #fff;
+    background-color: #222;
     background-image: url(../img/Rectangle.jpg);
     background-repeat: no-repeat;
-    background-size: 540px;
-    height: 640px;
+    background-size: cover;
+    background-position: center center;
 }
 
-.button {
-    margin-top: 0;
-    margin-left: 60px;
+.hero-main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 55px 60px;
+}
+
+.hero-badge {
     margin-bottom: 60px;
-    padding: 5px 14px;
-    font-style: 14px;
-    font-weight: 400;
+    padding: 5px 15px;
     border-radius: 41px;
-    background: none;
-    border: 1px solid #fff;
-    color: #fff;
+    border: 1px solid var(--text-color);
+    font-size: 14px;
+    font-weight: 500;
 }
 
-.left-heading {
+.hero-heading {
     margin-top: 0;
-    margin-left: 60px;
     margin-bottom: 25px;
-    font-style: 36px;
+    font-size: 36px;
     font-weight: 700;
     line-height: 46px;
 }
 
-.left-text {
+.hero-text {
     margin-top: 0;
-    margin-left: 60px;
-    margin-bottom: 198px;
 }
 
-.left-link {
-    padding-left: 0;
-    padding: 28px 130px 29px 129px;
+.hero-bottom {
+    padding: 28px;
+    text-align: center;
     font-size: 19px;
+    background-color: var(--green);
+}
+
+
+/* RIGHT */
+form {
+    padding: 55px 60px 40px;
+    border-radius: 20px;
+    background-color: #fff;
+}
+
+.form-heading {
+    margin-top: 0;
+    margin-bottom: 65px;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 42px;
+    color: #000;
+}
+
+.form-input {
+    width: 100%;
+    padding: 14px 14px 14px 0;
     border: none;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    background-color: #4dc490;
+    border-bottom: 1px solid #555;
+}
+
+.form-input:hover {
+    border-bottom: 1px solid #000;
+}
+
+.form-input:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.form-link {
+    width: 100%;
+    margin-top: 43px;
+    margin-bottom: 18px;
+    padding: 20px 149px;
+    background-color: #655af2;
     color: #fff;
 }
 
-.left-link span {
-    font-weight: 700;
+.form-text {
+    color: #000;
 }

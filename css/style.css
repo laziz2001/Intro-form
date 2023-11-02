@@ -18,7 +18,7 @@
 
 /* OUTLINE */
 *:focus {
-    outline: 2px dashed var(--primary);
+    outline: 2px dashed var(--blue);
     outline-offset: 2px;
 }
 
@@ -49,12 +49,16 @@ a {
     margin-right: auto;
 }
 
-/* Left */
+/* MAIN CONTENT */
 .main-content {
     display: flex;
     align-items: center;
+    margin-top: 80px;
+    margin-bottom: 8px;
 }
 
+
+/* HERO */
 .hero {
     --text-color: #fff;
 
@@ -62,6 +66,7 @@ a {
     flex-direction: column;
     width: 100%;
     max-width: 570px;
+    height: 655px;
     border-radius: 20px;
     overflow: hidden;
     color: #fff;
@@ -111,8 +116,12 @@ a {
 
 /* RIGHT */
 form {
+    width: 100%;
+    max-width: 570px;
+    margin-left: 12px;
     padding: 55px 60px 40px;
     border-radius: 20px;
+    overflow: hidden;
     background-color: #fff;
 }
 
@@ -122,33 +131,57 @@ form {
     font-size: 32px;
     font-weight: 600;
     line-height: 42px;
-    color: #000;
+    color: var(--text-color);
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 65px;
 }
 
 .form-input {
-    width: 100%;
-    padding: 14px 14px 14px 0;
-    border: none;
+    padding-top: 15px;
+    padding-bottom: 14px;
+    border: 0;
     border-bottom: 1px solid #555;
+    color: #555;
 }
 
-.form-input:hover {
-    border-bottom: 1px solid #000;
-}
-
-.form-input:not(:last-child) {
+.form-field:not(:last-child) {
     margin-bottom: 20px;
 }
 
-.form-link {
+.form-input:focus {
+    font-weight: 600;
+    border-bottom: 1px solid #000;
+    color: #000;
+}
+
+
+.form-button {
     width: 100%;
-    margin-top: 43px;
-    margin-bottom: 18px;
-    padding: 20px 149px;
-    background-color: #655af2;
+    display: block;
+    margin-bottom: 8px;
+    padding: 20px;
+    font-weight: 600;
+    border-radius: 10px;
+    border: 0;
+    cursor: pointer;
+    background-color: var(--blue);
     color: #fff;
 }
 
-.form-text {
-    color: #000;
+.form-notice {
+    margin-top: 0;
+    font-size: 11px;
+    line-height: 15px;
+    text-align: center;
+}
+
+.form-notice-link {
+    font-weight: 500;
+    line-height: 15px;
+    color: var(--red);
+
 }

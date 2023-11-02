@@ -17,6 +17,7 @@
 
     <div class="main">
         <div class="container main-content">
+            <!-- HERO -->
             <div class="hero">
                 <div class="hero-main">
                     <div class="hero-badge">frontend and backend</div>
@@ -28,15 +29,18 @@
                 </div>
             </div>
 
-            <!-- <form action="https://echo.academyhtml.ru" method="GET">
+            <!-- FORM -->
+            <form action="https://echo.academyhtml.ru" method="GET">
                 <h2 class="form-heading">Sign up for the course and <br> get free 7 days</h2>
-                <input class="form-input" type="text" placeholder="Name" required><br>
-                <input class="form-input" type="text" placeholder="Last Name" required><br>
-                <input class="form-input" type="email" placeholder="Email Address" required><br>
-                <input class="form-input" type="password" placeholder="Password" required><br>
-                <a class="form-link" href="#">Claim your free trial</a><br>
-                <p class="form-text">By clicking the button, you are agreeing to ourTerms and Services</p>
-            </form> -->
+                <div class="form-field">
+                    <input class="form-input" type="text" name="name" placeholder="First Name" aria-label="name" required><br>
+                    <input class="form-input" type="text" name="last_name" placeholder="Last Name" aria-label="last_name" required><br>
+                    <input class="form-input" type="email" name="email" placeholder="Email Address" aria-label="email" required><br>
+                    <input class="form-input" type="password" name="password" placeholder="Password" aria-label="password" required><br>
+                </div>
+                <button class="form-button" type="submit">Claim your free trial</button><br>
+                <div class="form-notice">By clicking the button, you are agreeing to our <a class="form-notice-link" href="#">Terms and Services</a></div>
+            </form>
         </div>
     </div>
 
